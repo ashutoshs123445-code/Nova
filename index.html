@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nova — Just Connect</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="flare"></div>
+
+  <div class="card">
+    <div class="brand">
+      <span class="brand-mark">Nova</span>
+    </div>
+    <p class="tagline">Just Connect.</p>
+
+    <h1 class="heading">Log in</h1>
+
+    <form id="login-form" novalidate>
+      <div class="field" id="field-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email" required>
+        <div class="field-error">Enter a valid email address.</div>
+      </div>
+
+      <div class="field" id="field-password">
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+        <div class="field-error">Password is required.</div>
+      </div>
+
+      <button type="submit" class="primary" id="login-btn">Log in</button>
+      <div class="status-msg" id="login-status"></div>
+    </form>
+
+    <div class="divider">or continue with</div>
+
+    <div class="alt-actions">
+      <button class="secondary" id="google-btn">Continue with Google</button>
+      <button class="secondary" id="phone-btn">Continue with phone number</button>
+    </div>
+
+    <p class="switch-link">New to Nova? <a href="signup.html">Create an account</a></p>
+  </div>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
